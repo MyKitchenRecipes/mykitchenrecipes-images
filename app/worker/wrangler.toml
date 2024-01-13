@@ -6,7 +6,7 @@ compatibility_flags = [ "nodejs_compat" ]
 browser = { binding = "BROWSER" }
 
 kv_namespaces = [
-  { binding = "KV", id = "e3994c0b19c24deaa202440dce3573bb" }
+  { binding = "KV", id = "e3994c0b19c24deaa202440dce3573bb", preview_id = "ec5d2385a92648cfb316190206e54f54" }
 ]
 
 [vars]
@@ -17,6 +17,7 @@ BUCKET_URL = "https://images.mykitchenrecipes.app"
 [[r2_buckets]]
 binding = "BUCKET"
 bucket_name = "mykitchenrecipes-images"
+preview_bucket_name = "mykitchenrecipes-images-dev"
 
 [[durable_objects.bindings]]
 name = "DURABLE_OBJECT"
