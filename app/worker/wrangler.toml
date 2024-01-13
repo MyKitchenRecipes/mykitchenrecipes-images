@@ -1,0 +1,25 @@
+name = "mykitchenrecipes-images"
+main = "src/index.ts"
+compatibility_date = "2023-12-18"
+compatibility_flags = [ "nodejs_compat" ]
+
+browser = { binding = "BROWSER" }
+
+kv_namespaces = [
+  { binding = "KV", id = "e3994c0b19c24deaa202440dce3573bb" }
+]
+
+[vars]
+PAGES_URL = "https://mykitchenrecipes-images-pages.pages.dev"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "mykitchenrecipes-images"
+
+[[durable_objects.bindings]]
+name = "DURABLE_OBJECT"
+class_name = "BrowserDurableObject"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["BrowserDurableObject"]

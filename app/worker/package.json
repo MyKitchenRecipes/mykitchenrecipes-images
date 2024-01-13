@@ -1,0 +1,23 @@
+{
+  "name": "@mykitchenrecipes/mykitchenrecipes-images",
+  "version": "0.9.0",
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev"
+  },
+  "devDependencies": {
+    "@cloudflare/puppeteer": "^0.0.5",
+    "@cloudflare/workers-types": "^4.20231218.0",
+    "@types/node": "^20.10.6",
+    "@types/uuid": "^9.0.7",
+    "typescript": "^5.0.4",
+    "wrangler": "^3.0.0"
+  },
+  "dependencies": {
+    "@cretezy/cloudflare-d1-backup": "^0.2.1",
+    "@nora-soderlund/cloudflare-router": "0.9.1",
+    "uuid": "^9.0.1"
+  }
+}

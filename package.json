@@ -1,0 +1,12 @@
+{
+  "name": "mykitchenrecipes-images",
+  "version": "0.9.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:pages": "cd ./app/pages && npm run build",
+    "deploy:pages": "cd ./app/pages && npm run deploy",
+
+    "deploy:worker": "cd ./app/worker && pnpm run deploy"
+  }
+}
