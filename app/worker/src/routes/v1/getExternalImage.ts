@@ -46,7 +46,8 @@ export default async function getExternalImageHandler(request: CloudflareRequest
 
     await request.env.BUCKET.put(newImagePath, responseArrayBuffer, {
       httpMetadata: {
-        contentType: responseContentType
+        contentType: responseContentType,
+        cacheControl: "s-maxage=120"
       }
     });
 
