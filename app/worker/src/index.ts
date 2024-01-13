@@ -9,7 +9,10 @@ router.addRequestHandler("GET", "/v1/external", getExternalImageHandler);
 export interface Env {
   BROWSER: BrowserWorker;
   PUPPETEER_BROWSER?: Browser;
+
+  WORKER_URL: string;
   PAGES_URL: string;
+  BUCKET_URL: string;
 
   DATABASE: D1Database;
   

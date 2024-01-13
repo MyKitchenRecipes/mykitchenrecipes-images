@@ -1,4 +1,4 @@
-name = "mykitchenrecipes-images"
+name = "mykitchenrecipes-images-service"
 main = "src/index.ts"
 compatibility_date = "2023-12-18"
 compatibility_flags = [ "nodejs_compat" ]
@@ -10,7 +10,9 @@ kv_namespaces = [
 ]
 
 [vars]
-PAGES_URL = "https://mykitchenrecipes-images-pages.pages.dev"
+PAGES_URL = "https://images-pages.mykitchenrecipes.app"
+WORKER_URL = "https://images-service.mykitchenrecipes.app"
+BUCKET_URL = "https://images.mykitchenrecipes.app"
 
 [[r2_buckets]]
 binding = "BUCKET"
