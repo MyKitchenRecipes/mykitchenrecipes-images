@@ -10,7 +10,11 @@ function App() {
     const url = searchParams.get("url");
 
     removeBackground(url, {
-      publicPath: `${window.location.protocol + '//' + window.location.host + window.location.pathname}/static/js/`
+      publicPath: `${window.location.protocol + '//' + window.location.host + window.location.pathname}/static/js/`,
+      model: "small",
+      output: {
+        quality: 0.5
+      }
     }).then((imageBlob) => {
       const url = URL.createObjectURL(imageBlob);
 
