@@ -65,12 +65,6 @@ export default async function getExternalImageHandler(request: CloudflareRequest
 
   const base64String = (await page.evaluate(getExternalImageResult, url)) as string;
 
-  // Logs nothing
-  console.log({ base64String });
-  
-  // Logs the object
-  console.log("base64String", { base64String });
-
   const imageBuffer = Buffer.from(base64String.split(',')[1], 'base64');
 
   const imageId = crypto.randomUUID();
